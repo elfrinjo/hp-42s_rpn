@@ -1,0 +1,44 @@
+00 { 133-Byte Prgm }
+01▸LBL "MWVE"
+02 INPUT "Watt"
+03 INPUT "Zeit"
+04 →HR
+05 STO "Zeit"
+06 100
+07 STO 00
+08 RCL "Watt"
+09 270
+10 X≤Y?
+11 STO 00
+12 RCL "Watt"
+13 300
+14 X≤Y?
+15 STO 00
+16 RCL "Watt"
+17 440
+18 X≤Y?
+19 STO 00
+20 RCL "Watt"
+21 600
+22 X≤Y?
+23 STO 00
+24 RCL "Watt"
+25 950
+26 X≤Y?
+27 STO 00
+28 RCL "Watt"
+29 RCL 00
+30 ÷
+31 RCL "Zeit"
+32 ×
+33 "t= "
+34 →HMS
+35 0.01
+36 ×
+37 ATIME
+38 RCL 00
+39 ├"[LF]P= "
+40 AIP
+41 ├"W"
+42 AVIEW
+43 END

@@ -1,0 +1,20 @@
+00 { 35-Byte Prgm }
+01▸LBL "SPLIT"
+02 STO "m"
+03 RSUM
+04 DET
+05 STO 01
+06 RCL "m"
+07 DIM?
+08 RCL 01
+09 X<>Y
+10 ÷
+11 STO 02
+12 RCL 01
+13 X<>Y
+14 RCL "m"
+15 X<>Y
+16 -
+17 RCL 02
+18 X<>Y
+19 END
