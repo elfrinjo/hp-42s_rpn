@@ -16,4 +16,16 @@ p: Carbonization gauge pressure in bar
 
 https://elfring.ms/blog/rpn-karbonisierungsrechner
 
+## GFWtr - Grainfather Water Calculator
+Asks for the batchvolume in l (Aussschlahmenge / Asslg) and grainbill in kg (Malz) and 
+calculates the amount of mash- and sparge-water for grain bills > 4,5 kg according to
+this formula from the Grainfather manual:
+```
+MashWater = GB * 2.7 + 3.5
+SpargeWater = (BV + WL) - MashWater + (GB * 0.8)
+```
+GB: Grainbill in kg  
+BV: Batchvolume in l  
+WL: Waterloss in boil & trub in l (defaults to 5)  
+Adjust waterloss in line 10
 

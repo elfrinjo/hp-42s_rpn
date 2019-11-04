@@ -1,0 +1,25 @@
+00 { 93-Byte Prgm }
+01▸LBL "GFWtr"
+02 INPUT "Asslg l"
+03 INPUT "Malz kg"
+04 2.7
+05 ×
+06 3.5
+07 +
+08 STO 01
+09 RCL "Asslg l"
+10 5
+11 +
+12 RCL 01
+13 -
+14 RCL "Malz kg"
+15 0.8
+16 ×
+17 +
+18 STO 02
+19 "H Guss: "
+20 ARCL 01
+21 ├"[LF]N Guss: "
+22 ARCL 02
+23 AVIEW
+24 END
