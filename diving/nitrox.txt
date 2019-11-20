@@ -1,18 +1,17 @@
-00 { 46-Byte Prgm }
-01▸LBL "NTRX"
-02 MVAR "D"
-03 MVAR "Pp"
-04 MVAR "EAN"
-05 RCL "D"
-06 10
-07 ÷
-08 1
-09 +
-10 RCL "EAN"
-11 100
-12 ÷
-13 ×
-14 RCL "Pp"
-15 -
-16 END
+LBL "NTRX"
+MVAR "D"
+MVAR "Pp"
+MVAR "EAN"
+RCL "D"
+10
+÷
+1
++
+RCL "EAN"
+100
+÷
+×
+RCL "Pp"
+-
+END
 

@@ -1,22 +1,21 @@
-00 { 77-Byte Prgm }
-01▸LBL "SPND"
-02 MVAR "bar"
-03 MVAR "°C"
-04 MVAR "g/l"
-05 2617.25
-06 273.15
-07 RCL "°C"
-08 +
-09 ÷
-10 10.73797
-11 -
-12 E↑X
-13 RCL "bar"
-14 1.013
-15 +
-16 ×
-17 10
-18 ×
-19 RCL "g/l"
-20 -
-21 END
+LBL "SPND"
+MVAR "bar"
+MVAR "°C"
+MVAR "g/l"
+2617.25
+273.15
+RCL "°C"
++
+÷
+10.73797
+-
+E↑X
+RCL "bar"
+1.013
++
+×
+10
+×
+RCL "g/l"
+-
+END

@@ -1,18 +1,17 @@
-00 { 40-Byte Prgm }
-01▸LBL "ΣnCk"
-02 0
-03 STO 00
-04 INPUT "n"
-05 INPUT "k"
-06▸LBL 06
-07 RCL "n"
-08 RCL "k"
-09 COMB
-10 STO+ 00
-11 1
-12 STO- "k"
-13 RCL "k"
-14 X>0?
-15 GTO 06
-16 RCL 00
-17 END
+LBL "ΣnCk"
+0
+STO 00
+INPUT "n"
+INPUT "k"
+LBL 06
+RCL "n"
+RCL "k"
+COMB
+STO+ 00
+1
+STO- "k"
+RCL "k"
+X>0?
+GTO 06
+RCL 00
+END
