@@ -1,4 +1,5 @@
 LBL "MWVE"
+CLK24
 INPUT "Watt"
 INPUT "Zeit"
 →HR
