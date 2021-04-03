@@ -1,24 +1,44 @@
-LBL "GFWtr"
-INPUT "Asslg l"
-INPUT "Malz kg"
-2.7
-×
-3.5
-+
-STO 01
-RCL "Asslg l"
-5
-+
-RCL 01
--
-RCL "Malz kg"
-0.8
-×
-+
-STO 02
-"H Guss: "
-ARCL 01
-├"[LF]N Guss: "
-ARCL 02
-AVIEW
-END
+00 { 189-Byte Prgm }
+01▸LBL "GFWtr"
+02 ADV
+03 "---GF Wasser---"
+04 PRA
+05 CLA
+06 DATE
+07 ADATE
+08 ├" "
+09 TIME
+10 ATIME24
+11 PRA
+12 CLA
+13 DROPN 2
+14 INPUT "Asslg l"
+15 INPUT "Malz kg"
+16 2,7
+17 ×
+18 3,5
+19 +
+20 STO 01
+21 RCL "Asslg l"
+22 5
+23 +
+24 RCL 01
+25 -
+26 RCL "Malz kg"
+27 0,8
+28 ×
+29 +
+30 STO 02
+31 "Ausschlag= "
+32 ARCL "Asslg l"
+33 ├" l[LF]Malz= "
+34 ARCL "Malz kg"
+35 ├" kg"
+36 PRA
+37 "Hauptguss= "
+38 ARCL 01
+39 ├" l[LF]Nachguss= "
+40 ARCL 02
+41 ├" l"
+42 AVIEW
+43 .END.

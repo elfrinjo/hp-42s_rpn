@@ -1,24 +1,45 @@
-LBL "MOD"
-100
-÷
-STO 01
-1.4
-RCL 01
-÷
-1
--
-10
-×
-"MOD1,4= "
-ARCL ST X
-1.6
-RCL 01
-÷
-1
--
-10
-×
-├"[LF]MOD1,6= "
-ARCL ST X
-AVIEW
-END
+00 { 140-Byte Prgm }
+01▸LBL "MOD"
+02 ADV
+03 "----- Nitrox MO"
+04 ├"D -----"
+05 PRA
+06 CLA
+07 DATE
+08 ADATE
+09 TIME
+10 ├" "
+11 ATIME24
+12 PRA
+13 CLA
+14 DROPN 2
+15 ├"[LF]EAN= "
+16 "EAN= "
+17 ARCL ST X
+18 ├" %"
+19 PRA
+20 100
+21 ÷
+22 STO 01
+23 1,4
+24 RCL 01
+25 ÷
+26 1
+27 -
+28 10
+29 ×
+30 "MOD1,4= "
+31 ARCL ST X
+32 ├" m"
+33 1,6
+34 RCL 01
+35 ÷
+36 1
+37 -
+38 10
+39 ×
+40 ├"[LF]MOD1,6= "
+41 ARCL ST X
+42 ├" m"
+43 AVIEW
+44 END
